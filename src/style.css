@@ -1,63 +1,57 @@
-.hello {
-    color: red;
-}
-
-
-
 .container {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .score-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .score-board {
-    list-style-type: none;
-    border: 1px solid rgb(0, 0, 0);
-    width: 82%;
-    padding: 0;
+  list-style-type: none;
+  border: 1px solid rgb(0, 0, 0);
+  width: 82%;
+  padding: 0;
 }
 
 .score-item {
-    padding: 3px 5px;
-    font-weight: bold;
-    font-family: monospace;
+  padding: 3px 5px;
+  font-weight: bold;
+  font-family: monospace;
 }
 
 .score-item:nth-child(odd) {
-    background-color: rgb(224, 124, 124);
+  background-color: rgb(224, 124, 124);
 }
+
 .refresh-btn {
-    margin-right: 70px;
-    height: 30px;
+  margin-right: 70px;
+  height: 30px;
 }
 
 .form-section {
-    width: 100%;
-    /* background-color: rgba(0, 0, 0, 0.6); */
+  width: 100%;
 }
 
 .form-control {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .form-control li {
-    margin: 5% 0;
+  margin: 5% 0;
 }
 
-input{ 
-    width: 98%;
-    height: 30px;
+input {
+  width: 98%;
+  height: 30px;
 }
 
 .submit-btn {
-    float: right;
-    height: 30px;
+  float: right;
+  height: 30px;
 }

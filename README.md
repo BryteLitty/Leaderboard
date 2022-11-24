@@ -1,13 +1,12 @@
-## Awesome Books App
-A To Do List app built with Javascript and Webpack
+## Leaderboard App
+A simple app that display the scores of players. Built using HTML, CSS, Webpack and JavaScript
 
 ### Built With
 - HTML 
+- Css
 - JavaScript
+- Webpack
 
-### Live Demo
-
-[View live Demo](https://brytelitty.github.io/Todo-App/dist/)
 
 ### Getting Started 
 To get a local copy up and running follow these simple steps:
