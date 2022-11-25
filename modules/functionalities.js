@@ -1,30 +1,13 @@
-const data = [
-  {
-    name: 'Bryte Litty',
-    score: 98,
-  },
-  {
-    name: 'Blessing Addison',
-    score: 95,
-  },
-  {
-    name: 'Joyce Bruce',
-    score: 90,
-  },
-  {
-    name: 'Juline Creapx',
-    score: 80,
-  },
-];
+const refreshBtn = document.querySelector('.refresh-btn');
+const gameID = 'YVE8pqwqOObzJ3cBeyNu';
 
-const displayScore = () => {
-  const scoreBoard = document.querySelector('.score-board');
-  scoreBoard.innerHTML = '';
-  data.forEach((score) => {
-    const content = `
-        <li class="score-item">${score.name}: ${score.score}</>
-        `;
-    scoreBoard.innerHTML += content;
+const saveData = async (userVal, scoreVal) => {
+  const scoreEndpoint = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores/`;
+
+  await fetch(scoreEndpoint, {
+    method: 'POST',
+    headers: { 'Content-type': 'application/json' },
+    body: JSON.stringify({ user: userVal, score: scoreVal }),
   });
 };
 
@@ -37,15 +20,34 @@ const addScore = () => {
   submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    const newInput = {
-      name: nameInput.value,
-      score: scoreInput.value,
-    };
+    saveData(nameInput.value, scoreInput.value);
 
-    data.push(newInput);
     form.reset();
-    displayScore();
   });
 };
 
-export { displayScore, addScore };
+const getScores = async () => {
+  const scoreEndpoint = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores/`;
+
+  const scores = await fetch(scoreEndpoint);
+  const data = await scores.json();
+  const fetched = await data.result;
+
+  const scoreBoard = document.querySelector('.score-board');
+  scoreBoard.innerHTML = '';
+  fetched.forEach((score) => {
+    const content = `
+        <li class="score-item">${score.user}: ${score.score}</>
+        `;
+    scoreBoard.innerHTML += content;
+  });
+};
+
+// listen for click event on refresh button
+const refreshScores = () => {
+  refreshBtn.addEventListener('click', () => {
+    getScores();
+  });
+};
+
+export { addScore, getScores, refreshScores };
