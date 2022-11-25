@@ -1,11 +1,11 @@
 import './style.css';
 
-// import key functions
-import { addScore, displayScore } from '../modules/functionalities.js';
+import { addScore, getScores, refreshScores } from '../modules/functionalities';
 
 const init = () => {
-  displayScore();
+  getScores();
   addScore();
+  refreshScores();
 };
 
 init();
