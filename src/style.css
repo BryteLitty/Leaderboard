@@ -3,8 +3,6 @@ body {
   background: wheat;
 }
 
-
-
 .container {
   width: 80%;
   margin: auto;
@@ -46,7 +44,6 @@ body {
   border: none;
   color: white;
 }
-
 
 .form-section {
   width: 100%;
