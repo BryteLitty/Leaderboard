@@ -1,36 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center">
-
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Leaderboard App</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -53,9 +22,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Leaderboard App] <a name="about-project"></a>
 
-> A simple app that display the scores of players. Built using HTML, CSS, Webpack and JavaScript
-
-**[your_project__name]** is a...
+**Leaderboard** is a simple app that display the scores of players. Built using HTML, CSS, Webpack and JavaScript
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -92,11 +59,11 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 
-- **[Sumbmit Score]**
+- **Sumbmit Score**
   A feature that allows users to submit socres to be displayed on the dashboard
-- **[A Scoreboard]**
+- **A Scoreboard**
   A feature that displays users with their repective scores
-- **[Refresh Scores Button]**
+- **Refresh Scores Button**
   A feature that allows users to refresh the Scoreboard in order to see the recently entered scores
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -155,8 +122,6 @@ To run the project do the following:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
