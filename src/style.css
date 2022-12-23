@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: wheat;
 }
 
 .container {
@@ -7,6 +8,10 @@ body {
   margin: auto;
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+.sub-heading {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .score-top {
@@ -23,9 +28,9 @@ body {
 }
 
 .score-item {
-  padding: 3px 5px;
+  padding: 3px 15px;
   font-weight: bold;
-  font-family: monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .score-item:nth-child(odd) {
@@ -35,6 +40,9 @@ body {
 .refresh-btn {
   margin-right: 70px;
   height: 30px;
+  background-color: rgb(23, 173, 23);
+  border: none;
+  color: white;
 }
 
 .form-section {
@@ -58,4 +66,10 @@ input {
 .submit-btn {
   float: right;
   height: 30px;
+  background-color: rgb(104, 27, 176);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 10px 15px;
 }
